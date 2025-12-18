@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- header section -> navigation bar -->
+    <header class="bg-white shadow sticky-top">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid m-0">
+                        <a class="navbar-brand text-danger fw-bold fs-2" href="#">FSD.</a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-4 fw-medium">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold active" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#products">Products</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#review">Review</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        contact us
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Modal section-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- model form -->
+                <div class="modal-body">
+                    <form method="post" action="#" class="row px-2">
+
+                        <div class="mb-3 col-md-6">
+                            <label for="fName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fName">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="lName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lName">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- model action buttons -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section -->
+    <main>
+
+        <!-- home section -->
+        <section id="home" class=" bg-light pt-md-5 pb-md-5">
+
+            <div class="container py-5 ">
+                <div class="row">
+                    <!-- home column 01 -->
+                    <div class="col-md-6 mb-5">
+                        <h1 class="text-capitalize fw-bold">elevate your style</h1>
+                        <p class="text-danger fw-medium">Trendy Clothes & Unique Dresses </p>
+                        <p class="fw-light">Discover the latest trends and redefine your svle with our stunning
+                            collection From casual chic to elegant evening wear, we ve got you covered.</p>
+
+                        <p class="fs-6 text">Explore our handpicked that sophistication contemporary fashim.
+                            Find the perfect outfit for any occasion.</p>
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <h3 class="text-danger text-center fw-bold">5+</h3>
+                                <p class="text-center fw-lighter ">years experience</p>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="text-danger text-center fw-bold">100+</h3>
+                                <p class="text-center fw-lighter">happy cutomers</p>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="text-danger text-center fw-bold">50+</h3>
+                                <p class="text-center fw-lighter">products</p>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-2 ">
+                            <button class="btn btn-danger text-capitalize me-2" type="button">shop now</button>
+                            <button class="btn btn-outline-danger text-capitalize" type="button">explore
+                                collection</button>
+                        </div>
+                    </div>
+
+                    <!-- home column 02 -> Image -->
+                    <div class="col-md-6">
+                        <img src="/assets/image/collection.png" class="img-fluid rounded" alt="dress collection area">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- about section -->
+        <section class="pt-5 pb-5" id="about">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- about cart 01-->
+                    <h1 class="text-center text-capitalize fw-bold">about<span class="text-danger"> us</span></h1>
+                    <div class="col-md-6">
+                        <div class="card mb-3 border-0 shadow rounted-0 rounded-top">
+                            <img src="/assets/image/Shopping.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold fs-5">Fashionable Boutique Store</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- about content 02 -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center" id="about">
+                        <h2 class="fw-bold text-capitalize my-3">why choose us ?</h2>
+                        <p>At Fashionable Boutque Store, we believe that fash•on is more than just clothing. it's a
+                            form of Our carefully curated collections are designed to help you
+                            your unique personality and style.</p>
+
+                        <p>We work with emerging designers and established brands to bring you exclusive pieces
+                            that you won't find anywhere else, Our team Of Style expettS is always available to help
+                            you the Outfit for any</p>
+
+                        <div class="row my-3">
+                            <div class="col-md-6">
+                                <p><i class="bi bi-check-circle-fill text-success me-2"></i>Premium Quality Materials
+                                </p>
+                                <p><i class="bi bi-check-circle-fill text-success me-2"></i>personal Styling Services
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="bi bi-check-circle-fill text-success me-2"></i>unique Designer Collections
+                                </p>
+                                <p><i class="bi bi-check-circle-fill text-success me-2"></i>Sustainable & Ethical
+                                    Fashion</p>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-danger text-capitalize w-50" role="button" aria-disabled="true">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 3 card platform section -->
+        <section class="pt-5 pb-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card">
+                            <div class="card-body text-center my-3">
+                                <i class="bi bi-truck text-danger display-6"></i>
+                                <h5 class="card-title text-capitalize fw-bold my-3">Free Delivery</h5>
+
+                                <p class="card-text text-lighter">Enjoy free shipping on all otdets over SSO. fast and
+                                    reliable delivery to your doorstep.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card">
+                            <div class="card-body text-center my-3">
+                                <i class="bi bi-arrow-counterclockwise text-danger display-6"></i>
+                                <h5 class="card-title text-capitalize fw-bold my-3">easy returns</h5>
+
+                                <p class="card-text text-lighter">Not satisfied? Return within 30 days for a full
+                                    refund. NO questions asked.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card">
+                            <div class="card-body text-center my-3">
+                                <i class="bi bi-shield-check text-danger display-6"></i>
+                                <h5 class="card-title text-capitalize fw-bold my-3">secure payments</h5>
+
+                                <p class="card-text text-lighter">Your payment information is safe With us. We use
+                                    industry-standard encryption.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- latest product section -->
+        <section class="pt-5 pb-5" id="products">
+            <h1 class="text-center text-capitalize fw-bold my-3">latest<span class="text-danger"> products</span></h1>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- card 01 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card border-0 shadow">
+                            <img src="/assets/image/man1.png"
+                                style="background-size: contain; object-fit: cover;  background-position:top; height: 400px;"
+                                class="img-fluid card-img-top" alt="gents wear image">
+                            <span class="badge rounded-pill text-bg-danger position-absolute m-2">-15%</span>
+                            <div class="card-body border-0 ">
+                                <h5 class="card-title fw-bold">Elegant Evening Dress</h5>
+                                <p class="card-text">Perfect for special occasions</p>
+                                <h4 class="text-danger fw-bold ">$89.99 <span
+                                        class="text-secondary fs-6 text-decoration-line-through">$105.99</span></h4>
+                                <div class="d-grid gap-2 mt-3">
+                                    <button class="btn btn-danger text-capitalize" type="button">add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 02 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card border-0 shadow">
+                            <img src="/assets/image//man2.png"
+                                style="background-size: contain; object-fit: cover;  background-position:top; height: 400px;"
+                                class="img-fluid card-img-top" alt="gents wear image">
+                            <span class="badge rounded-pill text-bg-danger position-absolute m-2">-10%</span>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Elegant Evening Dress</h5>
+                                <p class="card-text">Perfect for special occasions</p>
+                                <h4 class="text-danger fw-bold ">$89.99 <span
+                                        class="text-secondary fs-6 text-decoration-line-through">$55.99</span></h4>
+                                <div class="d-grid gap-2 mt-3">
+                                    <button class="btn btn-danger text-capitalize" type="button">add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 03 -->
+                    <div class="col-sm-6 col-md-4 my-2">
+                        <div class="card border-0 shadow">
+                            <img src="/assets/image/man3.png"
+                                style="background-size: contain; object-fit: cover;  background-position:top; height: 400px;"
+                                class="img-fluid card-img-top" alt="gents wear image">
+                            <span class="badge rounded-pill text-bg-danger position-absolute m-2">-20%</span>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Elegant Evening Dress</h5>
+                                <p class="card-text">Perfect for special occasions</p>
+                                <h4 class="text-danger fw-bold ">$89.99 <span
+                                        class="text-secondary fs-6 text-decoration-line-through">$82.99</span></h4>
+                                <div class="d-grid gap-2 mt-3">
+                                    <button class="btn btn-danger text-capitalize" type="button">add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-2 mx-auto mt-5">
+                <button class="btn btn-danger text-capitalize" type="button">view all products</button>
+            </div>
+
+        </section>
+
+        <!-- review section -->
+        <section class="pt-5 pb-5 bg-light" id="review">
+            <h1 class="text-center text-capitalize fw-bold my-3">customer<span class="text-danger"> review</span></h1>
+            <div class="container mt-4">
+
+
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                    <div class="carousel-inner">
+
+                        <!-- firsr slide content -->
+                        <div class="carousel-item active">
+                            <div class="row ">
+
+                                <!-- review card 01 -->
+                                <div class=" col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man1.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 02 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man2.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 03 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man3.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- second slide content -->
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <!-- review card 01 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man3.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 02 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man1.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 03 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man2.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- third slide content -->
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <!-- review card 01 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man1.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 02 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man3.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- review card 03 -->
+                                <div class="col-md-4 my-2">
+                                    <div class="card border-0 shadow p-3">
+                                        <div class="card-body text-center">
+                                            <img src="/assets/image/man2.png" alt="person 1"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 100px; height: 100px; object-fit: cover;">
+                                            <h5 class="card-title fw-bold mt-3">- Sarah M.</h5>
+                                            <p class="card-text fst-italic">"I absolutely love the collection at
+                                                Fashionable
+                                                Boutique Store!
+                                                The quality of the clothes is exceptional, and the designs are so
+                                                trendy. I've
+                                                received
+                                                countless compliments whenever I wear their pieces."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-danger rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- subscrib section -->
+        <section class="pt-5 pb-5 bg-danger">
+            <div class="container text-center text-white my-auto py-5">
+
+                <h3 class="fw-bold">Subscribe to Our Newsletter</h3>
+
+                <p>Get the latest fashion trends, exclusive offers, and style tips delivered directly to your inbox.</p>
+
+                <form method="post" class="row justify-content-center">
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">email</label>
+                        <input type="password" class="form-control" id="inputPassword2"
+                            placeholder="Your Email Address">
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-dark mb-3 px-4">Subscribe</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- quick link -->
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="text-capitalize text-white fw-bold my-3">Quick Link</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#home" class="text-decoration-none text-white-50">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none text-white-50">About</a></li>
+                        <li><a href="#products" class="text-decoration-none text-white-50">Products</a></li>
+                        <li><a href="#review" class="text-decoration-none text-white-50">Review</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- categories -->
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="text-capitalize text-white fw-bold my-3">Categories</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#home" class="text-decoration-none text-white-50">Dress</a></li>
+                        <li><a href="#about" class="text-decoration-none text-white-50">Tops</a></li>
+                        <li><a href="#products" class="text-decoration-none text-white-50">bottoms</a></li>
+                        <li><a href="#review" class="text-decoration-none text-white-50">Outerwear</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-white-50">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <!-- coustomer services -->
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="text-capitalize text-white fw-bold my-3">Coustomer Services</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#home" class="text-decoration-none text-white-50">Shipping Policy</a></li>
+                        <li><a href="#about" class="text-decoration-none text-white-50">Returns & Exchanges</a></li>
+                        <li><a href="#products" class="text-decoration-none text-white-50">Size Guide</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-white-50">Care Instructions</a></li>
+                        <li><a href="#review" class="text-decoration-none text-white-50">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- contact info -->
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="text-capitalize text-white fw-bold my-3">Contact Info</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="text-white-50"><i class="bi bi-telephone me-2"></i> (+94) 777 122 123</li>
+                        <li class="text-white-50"><i class="bi bi-envelope me-2"></i> m.a.m.sajith114@gmail.com</li>
+                        <li class="text-white-50"><i class="bi bi-geo-alt me-2"></i> 123 Fashion St, New York, NY 10001
+                        </li>
+                        <li class="text-white-50  d-flex my-3  gap-4">
+                            <a href="#" class="text-decoration-none text-white-50 me-2"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-decoration-none text-white-50 me-2"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-decoration-none text-white-50 me-2"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-decoration-none text-white-50"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-white my-1 mt-5" style="width: 100%; border: 1px solid white;">
+
+            <div class="text-center text-white-50 col-md-11 d-flex justify-content-between mx-5 fw-lighter my-0">
+                <p>&copy; 2025 Fashionable Boutique Store (Sajith). All rights reserved.</p>
+                <p>Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
